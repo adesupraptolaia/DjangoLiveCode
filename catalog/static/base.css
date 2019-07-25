@@ -1,0 +1,26 @@
+/* header */
+.header a{
+    color: :white;
+}
+.tokoonline{
+    background-color: #549d9a;
+    color: white; 
+}
+
+.home{
+    background-color: #6bc6c5;
+}
+.home a{
+    color: white;
+    text-decoration: none;
+}
+.home a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+/* isi */
+.border{
+    border: lightgray solid 1px;
+    margin: 10px 10px;
+}

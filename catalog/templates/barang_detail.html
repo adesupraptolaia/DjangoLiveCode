@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+
+{% block isi %}
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4 border">
+                <img width="100%" src="{{barang.foto}}" alt="">
+                <p><strong>{{barang.nama}}</strong></p>
+                <p style="color: green;"> Rp. {{barang.harga}}</p>
+                <p> Deskripsi Produk: </p>
+                <ul>
+                    <li>
+                        {{barang.deskripsi}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock isi %}
+    

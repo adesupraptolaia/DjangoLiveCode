@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+{% block isi %}
+    
+<div class="container">
+        <h1> Input Barang </h1>
+    <div class="row justify-content-cente">
+        <div class="col-5">
+            <table>
+                <tr>
+                    <td>
+                        <form method="POST" class="inputbarang">
+                                {% csrf_token %}
+                                {{form.as_p}}
+                                <button type="submit" class="save btn btn-default">Save</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock isi %}
+    

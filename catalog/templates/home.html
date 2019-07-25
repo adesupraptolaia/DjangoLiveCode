@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+
+{% block isi %} 
+<div class="container-fluid">
+        
+        <div class="row justify-content-center">
+        {% for list  in barang %}
+                <div class="col-3 border">
+                    <img width="100%" src="{{list.foto}}" alt="">
+                    <p> <strong> {{list.nama}} </strong></p>
+                    <p> Rp. {{list.harga}} </p>
+    
+                    <a href="{% url 'barang_detail' list.id %}">Lihat Details</a>
+                </div>
+        {% endfor %}
+        </div>
+</div>
+
+
+{% endblock isi %}
+   
